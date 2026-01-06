@@ -74,9 +74,11 @@ st.write("""
 
 st.write("- Apple（蘋果）& Banana（香蕉）：")
 st.image("files/圖片來源2.png", width="stretch")
+st.caption("Apple 與 Banana 資料集來源")
 
 st.write("- Mushroom（杏鮑菇）：")
 st.image("files/圖片來源1.png", width="stretch")
+st.caption("Mushroom 資料集來源")
 
 st.write("""
 **資料統計**：
@@ -92,6 +94,7 @@ st.write("""
 """)
 
 st.image("files/資料匯出1.png", width="stretch")
+st.caption("Roboflow 資料標註與匯出流程")
 
 st.write("""
 **資料擴增**：
@@ -148,6 +151,7 @@ st.write("""
 """)
 
 st.image("files/測試結果1.jpg", width="stretch")
+st.caption("10 張測試圖片的物件計數結果展示")
 
 
 
@@ -219,6 +223,7 @@ st.markdown("### 📤 圖片上傳與 YOLO 偵測")
 st.info("💡 提示：files 資料夾中有 測試圖片 可供測試")
 st.write("""預計輸出結果""")
 st.image("files/預計輸出結果.png", width="stretch")
+st.caption("預期的 YOLO 偵測輸出示意圖")
 st.write("---")
 uploaded_file = st.file_uploader("上傳圖片進行物件偵測", type=['jpg', 'jpeg', 'png'])
 
@@ -353,8 +358,10 @@ st.write("""**也有額外直接在roboflow訓練模型**：""")
 st.write("""也可以直接掃qrcode測試手機版
 """)
 st.image("files/roboflow額外測試.png", width="stretch")
+st.caption("Roboflow 平台訓練模型測試結果")
 st.write("**QRCode**")
 st.image("files/qrcode.png", width="stretch")
+st.caption("掃描以存取 Roboflow 專案線上測試頁面")
 st.write("""連結""")
 st.write("https://app.roboflow.com/final-qpgrz/my-first-project-gzs6z/2")
 

@@ -15,8 +15,12 @@ st.header("41123128 許智堯")
 
 # 不需要在這裡定義實驗項目列表，因為Streamlit會自動生成側邊欄
 
-# 顯示一張圖片(image)
-st.image("files/主題說明.png")
+# 顯示並排圖片
+col1, col2 = st.columns(2)
+with col1:
+    st.image("files/主題說明.png")
+with col2:
+    st.image("files/001.jpg")
 # Caption
 st.caption("這是本報告的主題說明")
 
